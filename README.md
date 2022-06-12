@@ -1,17 +1,17 @@
 # Odev 2 teslim tarihi : 13 Haziran 23:00 
 TODO
-- [ ] Save Country
-- [ ] Get Country by CountryID
-- [ ] Save City
-- [ ] Get City by Plate No
-- [ ] Save District
-- [ ] Get Districts Belonging to a City
-- [ ] Save Neighborhood
-- [ ] Update Neighborhood Name
-- [ ] Get Neighborhoods Belonging to a District
-- [ ] Save Street
-- [ ] Update Street Name
-- [ ] Get Streets Belonging to a Neighborhood
+- [X] Save Country
+- [X] Get Country by CountryID
+- [X] Save City
+- [X] Get City by Plate No
+- [X] Save District
+- [X] Get Districts Belonging to a City
+- [X] Save Neighborhood
+- [X] Update Neighborhood Name
+- [X] Get Neighborhoods Belonging to a District
+- [X] Save Street
+- [X] Update Street Name
+- [X] Get Streets Belonging to a Neighborhood
 - [ ] Save Address
-- [ ] Delete Address
-- [ ] Get Address by AddressID
+- [X] Delete Address
+- [X] Get Address by AddressID
