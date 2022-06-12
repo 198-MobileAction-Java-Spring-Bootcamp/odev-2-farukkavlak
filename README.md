@@ -18,6 +18,10 @@ TODO/Features
 - If one of the parameters of the given address exists in the database, only save is done, otherwise that parameter(country,city etc.) is created and then saved.
 - [X] Delete Address
 - [X] Get Address by AddressID
+# Controller
+<img src="https://github.com/198-MobileAction-Java-Spring-Bootcamp/odev-2-farukkavlak/blob/main/SwaggerUI/Controller.png"></img>
+# Schemas
+<img src="https://github.com/198-MobileAction-Java-Spring-Bootcamp/odev-2-farukkavlak/blob/main/SwaggerUI/Schemas.png"></img>
 
 ## Address
 <img src="https://github.com/198-MobileAction-Java-Spring-Bootcamp/odev-2-farukkavlak/blob/main/SwaggerUI/Address/saveAddress.png"></img>
