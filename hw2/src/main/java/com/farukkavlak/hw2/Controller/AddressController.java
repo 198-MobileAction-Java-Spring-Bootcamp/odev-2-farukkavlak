@@ -53,9 +53,9 @@ public class AddressController {
 
     //CITY
     //Save city with given city entity
-    @PostMapping("saveCity/{countryCode}")
-    public ResponseEntity saveCity(@RequestBody City city,@PathVariable("countryCode") int countryCode){
-        City savedCity = cityService.saveCity(city,countryCode);
+    @PostMapping("saveCity/{country_code}")
+    public ResponseEntity saveCity(@RequestBody City city,@PathVariable("country_code") int country_code){
+        City savedCity = cityService.saveCity(city,country_code);
         return new ResponseEntity(savedCity, HttpStatus.CREATED);
     }
 
