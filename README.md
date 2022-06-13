@@ -1,7 +1,6 @@
 # Odev 2 teslim tarihi : 13 Haziran 23:00 
 Address Registration System;<br>
 TODO/Features
-
 - [X] Save Country
 - [X] Get Country by CountryID
 - [X] Save City
@@ -18,6 +17,13 @@ TODO/Features
 - If one of the parameters of the given address exists in the database, only save is done, otherwise that parameter(country,city etc.) is created and then saved.
 - [X] Delete Address
 - [X] Get Address by AddressID
+<br><br>Dto used for only address.
+Entity used to get other inputs such as Country,City etc.<br>
+Converter class used for convert to Address from AddressSaveRequestDto and to AddressDto from Address.<br>
+# Controller
+<img src="https://github.com/198-MobileAction-Java-Spring-Bootcamp/odev-2-farukkavlak/blob/main/SwaggerUI/Controller.png"></img>
+# Schemas
+<img src="https://github.com/198-MobileAction-Java-Spring-Bootcamp/odev-2-farukkavlak/blob/main/SwaggerUI/Schemas.png"></img>
 
 ## Address
 <img src="https://github.com/198-MobileAction-Java-Spring-Bootcamp/odev-2-farukkavlak/blob/main/SwaggerUI/Address/saveAddress.png"></img>
