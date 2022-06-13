@@ -98,7 +98,7 @@ public class AddressConverter {
             address.setCity(cityService.getCityByPlateNo(addressSaveRequestDto.getPlateNo()));
         }else{
             City city = new City(addressSaveRequestDto.getCityName(), addressSaveRequestDto.getPlateNo());
-            cityService.saveCity(city);
+            cityService.saveCity(city, addressSaveRequestDto.getCountryCode());
             address.setCity(city);
         }
     }

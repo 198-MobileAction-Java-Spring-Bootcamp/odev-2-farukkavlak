@@ -1,7 +1,9 @@
 package com.farukkavlak.hw2.Service;
 
 import com.farukkavlak.hw2.Dao.CityDao;
+import com.farukkavlak.hw2.Dao.CountryDao;
 import com.farukkavlak.hw2.Model.City;
+import com.farukkavlak.hw2.Model.Country;
 import com.farukkavlak.hw2.Model.District;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +15,11 @@ import java.util.List;
 public class CityService {
     @Autowired
     private CityDao cityDao;
-    public City saveCity(City city) {
+    @Autowired
+    private CountryDao countryDao;
+    public City saveCity(City city, int belongCountryCode) {
+        Country country = countryDao.findByCountryCode(belongCountryCode);
+        country.getCities().add(city);
         return cityDao.save(city);
     }
     public City getCityByPlateNo(int plate_no) {

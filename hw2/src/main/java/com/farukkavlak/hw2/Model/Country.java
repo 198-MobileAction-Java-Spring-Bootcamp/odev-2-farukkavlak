@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -26,6 +28,10 @@ public class Country {
 
     @Column(nullable = false)
     private Integer countryCode;
+
+    @OneToMany(fetch = FetchType.LAZY,targetEntity = City.class)
+    @JoinColumn(name = "country_city_fk", referencedColumnName = "id")
+    public List<City> cities = new ArrayList<City>();
 
     public Country(int countryCode, String countryName) {
         this.countryCode = countryCode;
